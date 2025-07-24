@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner sc=new Scanner(System.in);
+        int count=0;
+        long num=sc.nextLong();
+        if(1<=num && num<10000000)
+        {
+            while(num>0){
+                count++;
+                num=num/10;
+                
+            }
+            System.out.println("The count of the given integer is: " + count);
+        }
+            else
+             {
+                 System.out.println("Enter a Valid Input");
+                    }
+        }
+}
